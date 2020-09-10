@@ -44,3 +44,29 @@ Build the following endpoints. Write any additional data access helpers as neede
 - `GET /api/recipes/:id/shoppingList`: a list of ingredients and quantites for a single recipe
 - `GET /api/recipes/:id/instructions`: a correctly ordered list of how to prepare a single recipe
 - `GET /api/ingredients/:id/recipes`: all recipes in the system that utilize a single ingredient 
+
+## Tips
+
+## Components
+    - entities -> resources -> nouns -> tables
+    - properties -> columns
+    - relationships -> sub-routes -> foreign keys
+
+## Workflow
+    - identify entities
+    - identify relationships
+    - identify properties
+
+## Relationships
+    - one to one: rare
+    - one to many -> this is the one
+    - many to many -> a trick
+
+## Mantras
+
+    - every table must have a primary key
+    - work on two or three entities at a time (map to the relationships below)
+    - one to many relationships -> requires a foreign key
+        - the foreign key goes on the many side
+    - many to many -> make a third table
+    - the third table can and probably will have extra information
